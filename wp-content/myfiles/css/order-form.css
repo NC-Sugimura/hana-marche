@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+h2 {
+	font-weight: bold;
+}
+.wpcf7 {
+	background-color: transparent;
+}
+form h2 {
+	width: 100%;
+	background-color: transparent;
+	color: #ad535c;
+	border: 1px solid #ad535c;
+}
+form h2 span {
+	margin-left: 0.5em;
+	font-weight: normal;
+	font-size: 70%;
+}
+@media (min-width: 992px) {
+	form dl {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	form dl dt,
+	.p-entry__body form dl dd {
+		margin-bottom: 0;
+	}
+	form dt {
+		width: 12em;
+	}
+	form dd {
+		padding-left: 1em;
+		width: calc(100% - 12em);
+	}
+	form .full {
+		width: 100%;
+	}
+	form .half dd {
+		width: calc(50% - 12em);
+	}
+	form dd input,
+	form dd select {
+		width: 20em;
+	}
+	form div dl:not(:last-of-type) {
+		margin-bottom: 1em;
+		padding: 0px 0px 1em 0px;
+		border-bottom: 1px solid #dddddd;
+	}
+	/*注文内容特別仕様*/
+	.wpcf7 #order dt {
+		width: 17em;
+	}
+	.wpcf7 #order dd {
+		width: calc(100% - 20em);
+	}
+	/*必須マーク*/
+	form .require:after {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.2em;
+		margin-left: 0.5em;
+		border: solid 1px #ad535c;
+		border-radius: 0.2em;
+		color: #ad535c;
+		font-size: 70%;
+		line-height: 1;
+		content: "必須";
+	}
+	form span.small {
+		color: #ad535c;
+	}
+	/*個別*/
+	.wpcf7 span {
+		display: inline-block;
+		width: auto;
+	}
+	.wpcf7 dd > span {
+		margin: 0.25em 0.5em;
+	}
+	.wpcf7 .your-name1,
+	.wpcf7 .your-kana1,
+	.wpcf7 .your-name2,
+	.wpcf7 .your-kana2,
+	.wpcf7 .deli-name1,
+	.wpcf7 .deli-kana1,
+	.wpcf7 .deli-name2,
+	.wpcf7 .deli-kana2,
+	.wpcf7 .your-tel,
+	.wpcf7 .your-fax,
+	.wpcf7 .deli-tel,
+	.wpcf7 .deli-fax,
+	.wpcf7 .deli-day,
+	.wpcf7 .deli-time {
+		width: 15em;
+	}
+	.wpcf7 .your-company-name,
+	.wpcf7 .your-company-kana,
+	.wpcf7 .deli-company-name,
+	.wpcf7 .deli-company-kana,
+	.wpcf7 .address,
+	.wpcf7 .address2 {
+		width: 31em;
+	}
+	.wpcf7 .zip,
+	.wpcf7 .zip2 {
+		width: 6em;
+	}
+	.wpcf7 .message {
+		width: 100%;
+	}
+	.wpcf7 #submit input {}
+}
+@media (max-width: 991px) {
+	form dd input,
+	form dd select {
+		width: 100%;
+	}
+	.wpcf7-form-control-wrap{
+		display: inline-block;
+		width: 100%;
+	}
+	.wpcf7 .your-name1,
+	.wpcf7 .your-kana1,
+	.wpcf7 .your-name2,
+	.wpcf7 .your-kana2,
+	.wpcf7 .deli-name1,
+	.wpcf7 .deli-kana1,
+	.wpcf7 .deli-name2,
+	.wpcf7 .deli-kana2,
+	.wpcf7 .your-tel,
+	.wpcf7 .your-fax,
+	.wpcf7 .deli-tel,
+	.wpcf7 .deli-fax {
+		width: 38vw;
+	}
+}

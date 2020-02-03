@@ -1,0 +1,23 @@
+/*h1周りSEO作業*/
+@media (min-width: 992px) {
+	.h1 {
+		margin-left: 30px;
+	}
+	.p-page-header .p-page-header__inner {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+	#content_top .button.btn_text {
+		width: 40%;
+	}
+}
+@media (max-width: 991px) {
+	.p-page-header .p-page-header__inner {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+	#content_top .button.btn_text {
+		width: 90%;
+	}
+}

@@ -1,0 +1,47 @@
+@media (min-width: 992px) {
+	.item {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.item h2 {
+		width: 100%;
+	}
+	.item > div {
+		width: 49%;
+	}
+}
+	.item > div {
+		padding: 1em;
+		margin-bottom: 0.5em;
+		border: 1px solid #ddd;
+	}
+.item p {
+	display: inline-block;
+	margin: 0;
+	font-size: 120%;
+	font-weight: bold;
+}
+.number:before{
+	content: "【";
+}
+.number:after{
+	content: "】";
+}
+.price:after {
+	content: "円(税込)"
+}
+.item > div > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 0.5em;
+	margin-top: 0.5em;
+	border-top: 1px solid #ddd;
+}
+.item figure {
+	width: 60%;
+}
+.item ul {
+	width: 28%;
+}

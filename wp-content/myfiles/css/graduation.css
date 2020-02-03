@@ -1,0 +1,76 @@
+#price > p {
+	padding: 0.5em;
+	margin: 10px 0 10px 0;
+	background-color: #FFE4B5;
+	border: dotted 3px #FFCCFF;
+	color: #63240c;
+	font-size: 20px;
+	font-weight: bold;
+}
+@media only screen and (min-width: 768px) {
+	#price > p {
+	display: flex;
+	justify-content: space-between;		
+	}
+}
+@media only screen and (max-width: 767px) {
+	#price > p span {
+		display: block;		
+	}	
+}
+#price .flex{
+	justify-content: space-between;
+}
+#price .flex figure{
+	padding: 1em;
+}
+@media only screen and (min-width: 768px) {
+	#price .flex figure{
+		width: calc(100% / 3);
+	}
+}
+@media only screen and (max-width: 767px) {
+}
+/*配達料金*/
+@media only screen and (min-width: 768px) {
+	#area td:first-of-type {
+		width: calc(100% - 13em);
+	}
+	#area td:nth-of-type(2) {
+		width: 13em;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#area td:first-of-type {
+		width: calc(100% - 9em);
+	}
+	#area td:nth-of-type(2) {
+		width: 9em;
+	}
+}
+#area tr:nth-of-type(2) li {
+	font-weight: bold;
+}
+#area td p{
+	margin-bottom: 0;	
+}
+#area td span {
+	font-weight: bold;
+}
+#area td span:before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	padding-right: 0.5em;
+	content: '\f06c';
+	color: #693;
+}
+#area ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin-bottom: 0;
+}
+#area li:not(:first-of-type):before {
+	content: '/';
+	margin: 0 0.2em;
+}

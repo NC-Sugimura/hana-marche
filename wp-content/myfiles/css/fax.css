@@ -1,0 +1,20 @@
+#fax-yousi {
+	text-align: center;
+}
+#fax-yousi main {
+	width: 640px;
+	margin: auto;
+}
+#fax-yousi h1 {
+	border: 1px #666666 solid;
+	font-size: 20px;
+	padding: 5px;
+	background-color: #E8E8E8;
+	margin: 0 0 5px 0;
+}
+#fax-yousi table {
+	font-size: 12px;
+}
+#fax-yousi i{
+	font-size: 200%;
+}

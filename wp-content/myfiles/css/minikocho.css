@@ -1,0 +1,16 @@
+article .flex {
+	justify-content: space-between;
+}
+article .flex div {
+	text-align: center;
+}
+@media (min-width: 992px) {
+	article .flex div {
+		width: 23%;
+	}
+}
+@media (max-width: 991px) {
+	article .flex div {
+		width: 48%;
+	}
+}

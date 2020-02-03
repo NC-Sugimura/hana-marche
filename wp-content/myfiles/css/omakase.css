@@ -1,0 +1,101 @@
+.spell{
+	font-size: 120%;
+}
+p.icon.leaf, p.icon.chev-right {
+	border: 0;
+}
+p.icon.leaf {
+	margin-top: 1em;
+	padding: 0;
+}
+.p-entry__body figure {
+	width: 100%;
+	text-align: center;
+}
+.p-entry__body figure img {
+	width: 100%;
+	max-width: 640px;
+	margin: auto;
+}
+#naiyou figure{
+	margin: 0.5em auto 2em;
+}
+#naiyou tr:first-of-type th{
+	text-align: left;
+	font-size: 120%;
+	font-weight: bold;
+}
+@media (min-width: 992px) {
+	.omakase,
+	.chocotto{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.omakase table{
+		width: 32%;
+	}
+	.chocotto table{
+		width: 48%;
+	}
+/*ctaボタン*/
+	#naiyou .cta {
+		justify-content: space-between;
+		width: 100%;
+	}
+	#naiyou .cta p {
+		width: 100%;
+		text-align: center;
+		font-size: 120%;
+	}
+	#naiyou .cta a {
+		width: calc(50% - 0.5em);
+		max-width: unset;
+		padding: 1em 0;
+		margin: 0.5em 0;
+		background-color: #fff;
+		border-width: 2px;
+		border-style: solid;
+		font-size: 150%;
+		font-weight: bold;
+		color: #333;
+	}
+	#naiyou .cta a:hover {
+		border: none;
+	}
+	.sec_title {
+		border-bottom-width: 2px;
+		border-bottom-style: solid;
+		font-size: 120%;
+		font-weight: bold;
+	}
+	/*TEL*/
+	#naiyou .cta_tel {
+		border-color: #dbb6c8;
+	}
+	#naiyou .cta_tel:hover {
+		background-color: #dbb6c8;
+	}
+	/*STORE*/
+	#naiyou .cta_store {
+		border-color: #a0deef;
+	}
+	#naiyou .cta_store:hover {
+		background-color: #a0deef;
+	}
+	/*FAX*/
+	#naiyou .cta_fax {
+		border-color: #edd49e;
+	}
+	#naiyou .cta_fax:hover {
+		background-color: #edd49e;
+	}
+	/*FORM*/
+	#naiyou .cta_form {
+		border-color: #c29dea;
+	}
+	#naiyou .cta_form:hover {
+		background-color: #c29dea;
+	}
+}

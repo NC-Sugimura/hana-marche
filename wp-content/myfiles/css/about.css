@@ -1,0 +1,28 @@
+@media (min-width: 992px) {
+	.flex{
+		justify-content: space-between;
+	}
+	.visual figure {
+		width: 260px;
+	}
+	.visual > p {
+		width: calc(100% - 260px - 1rem);
+	}
+	.info dl {
+		width: calc(100% - 484px - 1rem);
+	}
+	.info iframe {
+		width: 484px;
+	}
+}
+.flex.info dl{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.flex.info dt{
+	width: 5em;
+}
+.flex.info dd{
+	width: calc(100% - 5em);
+}

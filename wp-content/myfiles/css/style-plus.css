@@ -1,0 +1,482 @@
+/*カテゴリ外項目メガメニュー化*/
+@media (min-width: 992px) {
+	#menu-item-12076 .sub-menu{
+		display: flex;
+		flex-wrap: wrap;
+		width: 630px;
+	}
+	.p-global-nav #menu-item-11940 .sub-menu .current-menu-item > a{
+		background-color: #f3f2ed;
+		color: #444444;
+	}
+	.p-global-nav #menu-item-11940 .sub-menu a:hover {
+		 background-color: #ad535c;
+		color: #ffffff;
+	}
+}
+/*
+ *根本スタイル上書き
+ */
+body {
+	background-image: url(/wp-content/uploads/2019/11/body_bg_l.jpg), url(/wp-content/uploads/2019/11/body_bg_r.jpg);
+	background-position: left 20px top, right 20px top;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+	color: #222;
+}
+h2:not(.p-item-archive__item-title) {
+	background-color: #ad535c;
+	padding: 0.5em;
+	color: #fff;
+	font-weight: bold;
+}
+.title_bg {
+	background-color: #ad535c;
+	padding: 0.5em;
+	color: #fff;
+	font-weight: bold;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+section {
+	padding-bottom: 2em;
+}
+/*シンプル箇条書き*/
+.simple.dl {
+	margin-bottom: 50px;
+	padding: 0px 0px 50px 0px;
+	border-bottom: 1px solid #dddddd;
+}
+.simple dt {
+	color: #ad535c;
+	font-weight: bold;
+	font-size: 120%;
+}
+.simple dd:not(:last-of-type) {
+	margin-bottom: 50px;
+	padding: 0px 0px 50px 0px;
+	border-bottom: 1px solid #dddddd;
+}
+.bullet h2, .bullet p:last-of-type {
+	margin-bottom: 0;
+}
+/*押しボタン*/
+.button {
+	display: block;
+	margin: 0.5em auto;
+}
+.button:hover {
+	-webkit-transform: translate(0, 3px);
+	transform: translate(0, 3px);
+	opacity: 0.8;
+}
+/*テキストボタン*/
+.button.btn_text {
+	max-width: 400px;
+	padding: 8px 32px;
+	border-radius: 4px;
+	margin: 1em auto;
+	line-height: 1.5;
+	border-bottom: solid 3px rgba(0, 0, 0, 0.2);
+	background-color: #baddb6;
+	color: #303c2f;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+/*site-logo.svg*/
+@media (min-width: 992px) {
+	.p-logo img {
+		height: 80px;
+	}
+	footer .p-siteinfo__logo img {
+		max-width: 200px;
+	}
+}
+@media (max-width: 991px) {
+	.p-logo img {
+		height: 50px;
+	}
+}
+/*アイコン*/
+i{
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+}
+.icon:before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	padding-right: 0.5em;
+}
+/*葉っぱ*/
+.leaf:before {
+	content: '\f06c';
+	color: #693;
+}
+p.icon {
+	font-size: 120%;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+/*本*/
+.spell:before {
+	content: '\f02d';
+	color: #ad535c;
+}
+/*シェブロン→*/
+.chev-right:before {
+	content: '\f138';
+	color: #693;
+}
+/*bg付き番号リスト*/
+body {
+  counter-reset: list-bg-g 0;
+}
+.p-entry__body ul.list-bg-g{
+	list-style: none;
+}
+ul.list-bg-g li{
+	min-height: 3em;
+	padding-left: 1.2em;
+	background-image:url(/wp-content/uploads/2020/01/list-bg-g.jpg);
+	background-size: 3em;
+	background-repeat: no-repeat;
+}
+ul.list-bg-g li:before {
+	display: inline-block;
+	width: 2em;
+	color: #fff;
+	font-size: 110%;
+	font-weight: bold;
+	counter-increment: list-bg-g 1;
+	content: counter(list-bg-g) " ";
+}
+/*
+ *共通ルール
+ */
+.big {
+	font-size: 125%;
+}
+.small {
+	font-size: 90%;
+}
+.bold {
+	font-weight: bold;
+}
+.red {
+	color: red;
+}
+.rice:before {
+	content: "※";
+}
+.full {
+	width: 100%;
+}
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+.wpcf7 input[type="checkbox"], .wpcf7 input[type="radio"] {
+	width: 1em !important;
+}
+/*
+ *固定ページ上書き
+ */
+.p-entry-page.l-inner {
+	max-width: 900px;
+}
+/*
+ *ウェルカート上書き
+ */
+.p-hover-effect--type1:hover img {
+	opacity: .8;
+}
+.p-header__welcart-nav,
+.p-entry-item__cart-stock-status,
+.p-entry-item__cart-quantity,
+.p-entry-item__cart-button,
+.p-entry-item__cart-option,
+/*スマホフッターメニュー*/
+.-global-nav__item-welcart--mobile ,
+.p-global-nav__item-welcart--mobile{
+	display: none;
+}
+/*モバイル*/
+#js-header-cart--mobile {
+	display: none;
+}
+.p-entry__thumbnail img,
+.p-entry-item__mainimage img
+{
+	height: 100%;
+	width: auto;
+	max-width: 100%;
+	margin: auto;
+}
+@media (max-width: 991px) {
+	.p-entry-item__mainimage{
+		width: 100%;
+		height: 100vw;
+		margin: auto;
+	}
+	.p-entry-item__mainimage img{
+		max-height: 100%;
+		object-fit: contain;
+	}
+}
+/*商品ページ内カテゴリー別文言*/
+#content_top {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	min-height: 10em;
+	padding: 2.5em;
+	margin-bottom: 1em;
+	background-image: url(/wp-content/uploads/2019/11/c_top_bg1.jpg), url(/wp-content/uploads/2019/11/c_top_bg2.jpg);
+	background-position: left top, right bottom;
+	background-repeat: no-repeat;
+	font-size: 115%;
+	line-height: 1.5;
+}
+#content_top .flex {
+	justify-content: flex-start;
+}
+#content_bottom {
+	margin-top: 1em;
+}
+#content_notice_top {
+	margin: 1em 0;
+}
+/*
+ *サイドバナー
+ */
+.bun {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ddd;
+	padding: 14px 15px;
+}
+.bun:hover {
+	background-color: #f3f2ed;
+}
+.bun figure img {
+	margin: auto;
+}
+.bun p {
+	text-align: center;
+}
+.bun p:first-child {
+	border-bottom: solid 1px #ad5d62;
+	font-size: 120%;
+	font-weight: bold;
+}
+/*すけみつ*/
+.bun > * {
+	margin-bottom: 0.5em;
+}
+/*
+ *フッター
+ */
+.p-footer-widget-area .p-widget {
+    font-size: 14px;
+}
+.p-footer-widget-area #custom_html-5.p-widget {
+	width: 30%;
+}
+@media (max-width: 991px) {
+	.p-footer-widget-area .p-widget {
+		font-size: 14px;
+	}
+	.com_info{
+		margin-bottom: 1em;
+	}
+}
+@media (min-width: 992px) {
+	#js-footer-widget #custom_html-5 .custom-html-widget {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+#js-footer-widget .footer_link a {
+	display: block;
+	color: #444;
+}
+#js-footer-widget .footer_link a:hover {
+	color: #ad5d62;
+}
+@media (max-width: 991px) {
+	#js-footer-widget .footer_link p{
+		width: 100%;
+	}
+	#js-footer-widget .footer_link{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#js-footer-widget .footer_link a {
+		width: 49%;
+	}
+}
+/*会社情報*/
+	.p-footer-widget-area .p-widget#custom_html-35.p-widget {
+		width: 65%;
+		padding: 0;
+	}
+	.p-footer-widget-area .p-widget#custom_html-35 > div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#custom_html-35 figure {
+		justify-content: flex-start;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	#custom_html-35 figure img,
+	#custom_html-36 figure img {
+		width: auto;
+		height: 70px;
+	}
+	#custom_html-35 dl {
+		width: 49%;
+	}
+figure.footer_logo{
+	margin-bottom: 1em;
+}
+.com_info dt {
+	font-weight: bold;
+}
+.com_info dd::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	padding-right: 0.5em;
+}
+.com_info dd:nth-of-type(1)::before {
+	content: '\f017';
+}
+.com_info dd:nth-of-type(2)::before {
+	content: '\f3c5';
+}
+.com_info dd:nth-of-type(3)::before {
+	content: '\f095';
+}
+#custom_html-37 .footer_link:first-of-type{
+	margin-bottom: 2em;
+}
+/*PCフッター地図*/
+#custom_html-37 iframe {
+	width: 100%;
+		height: 200px;
+}
+/*スマホフッター地図*/
+#custom_html-36 iframe {
+	width: 100%;
+		height: 50vw;
+}
+/*カテゴリー一覧*/
+.p-item-archive__item-title {
+	font-size: 110%;
+	border-bottom: 1px solid #ad5d62;
+	margin-bottom: 0.5em;
+}
+.category-content {
+	color: #222;
+}
+/*商品記事下*/
+.bottom_cta .cta .button {
+	font-size: 150%;
+	font-weight: bold;
+}
+@media (min-width: 992px) {
+.bottom_cta .cta .button {
+	width: 48%;
+	}
+}
+@media (max-width: 991px) {
+	#into{
+		display: block;
+	}
+	.bottom_cta .button.btn_text {
+		padding: 8px;
+	}
+}
+.bottom_cta .cta .button i {
+	display: block;
+	font-size: 200%;
+}
+/*電話問い合わせウィジェット
+#tel_info(/form/,/contact/)
+***********************************************/
+.page-id-164 .cw_title,
+.page-id-167 .cw_title {
+	width: 100%;
+	font-size: 120%;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+.page-id-164 .cw_title:before,
+.page-id-167 .cw_title:before {
+	content: '\f095';
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	padding-right: 0.5em;
+}
+#tel_info{
+	text-align: center;
+		display: flex;
+}
+@media (min-width: 992px) {
+	#tel_info {
+		justify-content: space-between;
+	}
+}
+@media (max-width: 991px) {
+	#tel_info {
+		flex-direction: column;
+	}
+}
+#tel_info a {
+		padding: 1em 0;
+		margin: 0;
+		border-radius: 0.5em;
+		color: #333;
+		font-size: 150%;
+		font-weight: bold;
+}
+@media (min-width: 992px) {
+	#tel_info a {
+		width: calc(50% - 0.5em);
+		border: 2px solid #dbb6c8;
+		pointer-events: none;
+	}
+	#tel_info dt{
+		font-size: 80%;
+	}
+}
+@media (max-width: 991px) {
+	#tel_info a {
+		background-color: #dbb6c8;
+		border-bottom: solid 0.2em rgba(0, 0, 0, 0.2);
+		margin-bottom: 1em;
+	}
+}
+/*商品備考*/
+.p-entry-item__tab-content--1:first-letter{
+	color:transparent
+}
+/*胡蝶蘭カテゴリ一覧*/
+.pha-category{
+	justify-content: space-around;
+	margin: 0.5em;
+}
+.pha-category li{
+	width: 30%;
+	font-size: 120%;
+	font-weight: bold;
+}

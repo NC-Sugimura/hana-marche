@@ -1,0 +1,40 @@
+.p-entry__body p{
+	margin: 0;
+}
+article dd{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+div.full > div{
+	margin-bottom: 1em;
+}
+@media (min-width: 992px) {
+	article dd div{
+		width: calc(100% - 200px - 1em);
+	}
+	article dd figure{
+		width: 200px;
+	}
+}
+article #honsuu div.flex{
+	justify-content: space-between;
+}
+article #honsuu .flex dl{
+	width: 48%;
+}
+.word{
+	font-weight: bold;
+	font-size: 110%;
+}
+.word:before{
+	content:"【";
+}
+.word:after{
+	content:"】";
+}
+article #color dd figure{
+	width: 120px;
+}
+article #color dd div{
+	width:calc(100% - 120px - 1em);

@@ -1,0 +1,13 @@
+article dd{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+@media (min-width: 992px) {
+	article dd p{
+		width: calc(100% - 200px - 1em);
+	}
+	article dd figure{
+		width: 200px;
+	}
+}

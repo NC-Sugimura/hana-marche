@@ -1,0 +1,12 @@
+#season .flex{
+	align-items: flex-start;
+}
+#season figure {
+	width: 60px;
+	padding: 0.5em;
+}
+@media (min-width: 992px) {
+	#season p {
+		width: calc(100% - 60px - 1em);
+	}
+}
